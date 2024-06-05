@@ -1,0 +1,12 @@
+﻿@model List<Category>
+<div style="display: flex;flex-wrap: wrap;">
+    @foreach (var category in Model)
+    {
+        @* <a href="~/Shop/Category?id=@category.Id"> *@
+        <div style="margin:2px">
+            <a href="~/Shop/Category/@category.Id">
+                @category.Name
+            </a>
+        </div>
+    }
+</div>

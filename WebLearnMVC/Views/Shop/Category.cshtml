@@ -1,0 +1,11 @@
+﻿@model List<Product>
+<div style="display:flex;flex-wrap:wrap;">
+    @foreach (var product in Model)
+    {
+        <div style="margin:10px;border:1px solid black;width:210px">
+            <img style="width:200px;height:200px" src="~/@product.ImageAddress" />
+            <div>@product.Name</div>
+            <div>@product.Price</div>
+        </div>
+    }
+</div>
